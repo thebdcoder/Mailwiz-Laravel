@@ -1,0 +1,19 @@
+{
+    "name": "fahim/mailwiz-laravel",
+    "description": "Intregration of the Mailwiz SDK for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fahim Shariar",
+            "email": "thebdcoder@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Fahim\\Mailwiz\\" : "src/"
+        }
+    }
+
+}
