@@ -1,11 +1,11 @@
-<?php namespace Fahim\Mailwiz;
+<?php namespace Fahim\MailWiz;
 
 
-use MailWizzApi\Endpoint\ListSubscribers;
-use MailWizzApi\Json;
+use Fahim\MailWiz\API\Endpoint\ListSubscribers;
+use Fahim\MailWiz\API\Json;
 
-use MailWizzApi\Base;
-use MailWizzApi\Config;
+use Fahim\MailWiz\API\Base;
+use Fahim\MailWiz\API\Config;
 
 class Mailwiz {
 
