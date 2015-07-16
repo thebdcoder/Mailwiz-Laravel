@@ -16,7 +16,7 @@ use Fahim\MailWiz\API\Json;
  * Request is the request class used to send the requests to the API endpoints.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Http
  * @since      1.0
  */
@@ -101,7 +101,7 @@ class Request extends Base {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $client->timeout);
         curl_setopt($ch, CURLOPT_TIMEOUT, $client->timeout);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'MailWizzApi Client version ' . Client::CLIENT_VERSION);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Fahim\MailWiz\API Client version ' . Client::CLIENT_VERSION);
         curl_setopt($ch, CURLOPT_AUTOREFERER, true);
 
         if ($client->getResponseHeaders) {

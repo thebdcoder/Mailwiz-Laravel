@@ -9,11 +9,11 @@
 namespace Fahim\MailWiz\API\Cache;
 
 /**
- * MailWizzApi\Cache\Dummy is used for testing purposes, when you use the sdk with cache but don't want to
+ * Fahim\MailWiz\API\Cache\Dummy is used for testing purposes, when you use the sdk with cache but don't want to
  * really cache anything.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Cache
  * @since      1.0
  */
@@ -21,7 +21,7 @@ class Dummy extends CacheAbstract {
     /**
      * Cache data by given key.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::set()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::set()}.
      *
      * @param string $key
      * @param mixed $value
@@ -34,7 +34,7 @@ class Dummy extends CacheAbstract {
     /**
      * Get cached data by given key.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::get()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::get()}.
      *
      * @param string $key
      * @return mixed
@@ -46,7 +46,7 @@ class Dummy extends CacheAbstract {
     /**
      * Delete cached data by given key.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::delete()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::delete()}.
      *
      * @param string $key
      * @return bool
@@ -58,7 +58,7 @@ class Dummy extends CacheAbstract {
     /**
      * Delete all cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::flush()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::flush()}.
      *
      * @return bool
      */

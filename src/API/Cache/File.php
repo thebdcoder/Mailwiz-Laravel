@@ -11,10 +11,10 @@ namespace Fahim\MailWiz\API\Cache;
 use Fahim\MailWiz\API\Cache\CacheAbstract;
 
 /**
- * MailWizzApi\Cache\File makes use of the file system in order to cache data.
+ * Fahim\MailWiz\API\Cache\File makes use of the file system in order to cache data.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Cache
  * @since      1.0
  */
@@ -33,7 +33,7 @@ class File extends CacheAbstract {
      *
      * For consistency, the key will go through sha1() before it is saved.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::set()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::set()}.
      *
      * @param string $key
      * @param mixed $value
@@ -56,7 +56,7 @@ class File extends CacheAbstract {
      * For consistency, the key will go through sha1()
      * before it will be used to retrieve the cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::get()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::get()}.
      *
      * @param string $key
      * @return mixed
@@ -81,7 +81,7 @@ class File extends CacheAbstract {
      * For consistency, the key will go through sha1()
      * before it will be used to delete the cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::delete()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::delete()}.
      *
      * @param string $key
      * @return bool
@@ -104,7 +104,7 @@ class File extends CacheAbstract {
     /**
      * Delete all cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::flush()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::flush()}.
      *
      * @return bool
      */

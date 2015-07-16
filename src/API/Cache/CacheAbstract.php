@@ -13,10 +13,10 @@ namespace Fahim\MailWiz\API\Cache;
 use Fahim\MailWiz\API\Base;
 
 /**
- * MailWizzApi\Cache\CacheAbstract is the base class that all the caching classes should extend.
+ * Fahim\MailWiz\API\Cache\CacheAbstract is the base class that all the caching classes should extend.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Cache
  * @since      1.0
  */

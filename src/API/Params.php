@@ -41,12 +41,12 @@ use Exception;
  */
 
 /**
- * MailWizzApi\Params implements a collection that takes key-value pairs.
+ * Fahim\MailWiz\API\Params implements a collection that takes key-value pairs.
  *
  * You can access, add or remove an item with a key by using
  * {@link itemAt}, {@link add}, and {@link remove}.
  * To get the number of the items in the map, use {@link getCount}.
- * MailWizzApi\Params can also be used like a regular array as follows,
+ * Fahim\MailWiz\API\Params can also be used like a regular array as follows,
  * <pre>
  * $map[$key]=$value; // add a key-value pair
  * unset($map[$key]); // remove the value with the specified key
@@ -56,14 +56,14 @@ use Exception;
  * </pre>
  *
  * @property boolean $readOnly                    Whether this map is read-only or not. Defaults to false.
- * @property MailWizzApi_ParamsIterator $iterator An iterator for traversing the items in the list.
+ * @property Fahim\MailWiz\API_ParamsIterator $iterator An iterator for traversing the items in the list.
  * @property integer $count                       The number of items in the map.
  * @property array $keys                          The key list.
  *
  * @author    Serban George Cristian
  * @link      http://www.mailwizz.com
  * @copyright 2013-2014 http://www.mailwizz.com/
- * @package   MailWizzApi
+ * @package   Fahim\MailWiz\API
  * @since     1.0
  *
  * Implementation based on CMapIterator class file from the Yii framework.
@@ -234,7 +234,7 @@ class Params extends Base implements IteratorAggregate, ArrayAccess, Countable {
                 $this->add($key, $value);
             }
         } elseif ($data !== null) {
-            throw new Exception('MailWizzApi\Params map data must be an array or an object implementing Traversable.');
+            throw new Exception('Fahim\MailWiz\API\Params map data must be an array or an object implementing Traversable.');
         }
     }
 
@@ -277,7 +277,7 @@ class Params extends Base implements IteratorAggregate, ArrayAccess, Countable {
                 }
             }
         } elseif ($data !== null) {
-            throw new Exception('MailWizzApi\Params map data must be an array or an object implementing Traversable.');
+            throw new Exception('Fahim\MailWiz\API\Params map data must be an array or an object implementing Traversable.');
         }
     }
 

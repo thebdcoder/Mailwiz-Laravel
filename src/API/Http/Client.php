@@ -16,7 +16,7 @@ use Fahim\MailWiz\API\Base;
  * Client is the http client interface used to make the remote requests and receive the responses.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Http
  * @since      1.0
  */
@@ -57,7 +57,7 @@ class Client extends Base {
     public $paramsPost = array();
 
     /**
-     * @var \MailWizzApi\Params the PUT params sent in the request.
+     * @var \Fahim\MailWiz\API\Params the PUT params sent in the request.
      */
     public $paramsPut = array();
 
@@ -67,7 +67,7 @@ class Client extends Base {
     public $paramsDelete = array();
 
     /**
-     * @var \MailWizzApi\Params the headers sent in the request.
+     * @var \Fahim\MailWiz\API\Params the headers sent in the request.
      */
     public $headers = array();
 

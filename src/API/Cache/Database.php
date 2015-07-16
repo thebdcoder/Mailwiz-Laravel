@@ -11,12 +11,12 @@ namespace Fahim\MailWiz\API\Cache;
 use Fahim\MailWiz\API\Cache\CacheAbstract;
 
 /**
- * MailWizzApi\Cache\Database makes use of the PHP's {@link PDO} extension in order to cache data into a database.
+ * Fahim\MailWiz\API\Cache\Database makes use of the PHP's {@link PDO} extension in order to cache data into a database.
  *
  * For now it only supports Mysql and SQlite.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Cache
  * @since      1.0
  */
@@ -74,7 +74,7 @@ class Database extends CacheAbstract {
      *
      * For consistency, the key will go through sha1() before it is saved.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::set()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::set()}.
      *
      * @param string $key
      * @param mixed $value
@@ -103,7 +103,7 @@ class Database extends CacheAbstract {
      * For consistency, the key will go through sha1()
      * before it will be used to retrieve the cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::get()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::get()}.
      *
      * @param string $key
      * @return mixed
@@ -129,7 +129,7 @@ class Database extends CacheAbstract {
      * For consistency, the key will go through sha1()
      * before it will be used to delete the cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::delete()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::delete()}.
      *
      * @param string $key
      * @return bool
@@ -149,7 +149,7 @@ class Database extends CacheAbstract {
     /**
      * Delete all cached data.
      *
-     * This method implements {@link MailWizzApi\Cache\CacheAbstract::flush()}.
+     * This method implements {@link Fahim\MailWiz\API\Cache\CacheAbstract::flush()}.
      *
      * @return bool
      */

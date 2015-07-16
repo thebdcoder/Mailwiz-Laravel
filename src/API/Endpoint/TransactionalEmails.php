@@ -13,10 +13,10 @@ use Fahim\MailWiz\API\Http\Client;
 use Fahim\MailWiz\API\Http\Response;
 
 /**
- * MailWizzApi\Endpoint\TransactionalEmails handles all the API calls for transactional emails.
+ * Fahim\MailWiz\API\Endpoint\TransactionalEmails handles all the API calls for transactional emails.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Endpoint
  * @since      1.0
  */

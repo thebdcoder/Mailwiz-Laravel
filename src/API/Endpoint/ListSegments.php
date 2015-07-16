@@ -13,10 +13,10 @@ use Fahim\MailWiz\API\Http\Client;
 use Fahim\MailWiz\API\Http\Response;
 
 /**
- * MailWizzApi\Endpoint\ListSegments handles all the API calls for handling the list segments.
+ * Fahim\MailWiz\API\Endpoint\ListSegments handles all the API calls for handling the list segments.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Endpoint
  * @since      1.0
  */

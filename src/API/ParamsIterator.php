@@ -21,14 +21,14 @@ namespace Fahim\MailWiz\API;
 use Iterator;
 
 /**
- * MailWizzApi\ParamsIterator implements an interator for {@link MailWizzApi\Params}.
+ * Fahim\MailWiz\API\ParamsIterator implements an interator for {@link Fahim\MailWiz\API\Params}.
  *
- * It allows MailWizzApi\Params to return a new iterator for traversing the items in the map.
+ * It allows Fahim\MailWiz\API\Params to return a new iterator for traversing the items in the map.
  *
  * @author    Serban George Cristian
  * @link      http://www.mailwizz.com
  * @copyright 2013-2014 http://www.mailwizz.com/
- * @package   MailWizzApi
+ * @package   Fahim\MailWiz\API
  * @since     1.0
  *
  * Implementation based on CMapIterator class file from the Yii framework.

@@ -11,12 +11,12 @@ namespace Fahim\MailWiz\API;
 use Exception;
 
 /**
- * MailWizzApi\Config contains the configuration class that is injected at runtime into the main application.
+ * Fahim\MailWiz\API\Config contains the configuration class that is injected at runtime into the main application.
  *
  * It's only purpose is to set the needed data so that the API calls will run without problems.
  *
  * @author  Serban George Cristian <cristian.serban@mailwizz.com>
- * @package MailWizzApi
+ * @package Fahim\MailWiz\API
  * @since   1.0
  */
 class Config extends Base {

@@ -13,10 +13,10 @@ use Fahim\MailWiz\API\Http\Client;
 use Fahim\MailWiz\API\Http\Response;
 
 /**
- * MailWizzApi\Endpoint\Templates handles all the API calls for email templates.
+ * Fahim\MailWiz\API\Endpoint\Templates handles all the API calls for email templates.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Endpoint
  * @since      1.0
  */

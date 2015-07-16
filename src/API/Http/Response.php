@@ -15,7 +15,7 @@ use Fahim\MailWiz\API\Params;
  * Response is the class used to get the responses back from the API endpoints.
  *
  * @author     Serban George Cristian <cristian.serban@mailwizz.com>
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @subpackage Http
  * @since      1.0
  */

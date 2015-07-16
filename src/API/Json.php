@@ -63,13 +63,13 @@ use Fahim\MailWiz\API\Base;
  */
 
 /**
- * MailWizzApi\Json converts PHP data to and from JSON format.
+ * Fahim\MailWiz\API\Json converts PHP data to and from JSON format.
  *
  * @author     Michal Migurski <mike-json@teczno.com>
  * @author     Matt Knapp <mdknapp[at]gmail[dot]com>
  * @author     Brett Stimmerman <brettstimmerman[at]gmail[dot]com>
  *
- * @package    MailWizzApi
+ * @package    Fahim\MailWiz\API
  * @since      1.0
  */
 class Json {
@@ -259,14 +259,14 @@ class Json {
                 // treat as a JSON object
                 if (is_array($var) && count($var) && (array_keys($var) !== range(0, sizeof($var) - 1))) {
                     return '{' .
-                           join(',', array_map(array('MailWizzApi\Json', 'nameValue'),
+                           join(',', array_map(array('Fahim\MailWiz\API\Json', 'nameValue'),
                                                array_keys($var),
                                                array_values($var)))
                            . '}';
                 }
 
                 // treat it like a regular array
-                return '[' . join(',', array_map(array('MailWizzApi\Json', 'encode'), $var)) . ']';
+                return '[' . join(',', array_map(array('Fahim\MailWiz\API\Json', 'encode'), $var)) . ']';
 
             case 'object':
                 if ($var instanceof Traversable) {
@@ -278,7 +278,7 @@ class Json {
                     $vars = get_object_vars($var);
                 }
                 return '{' .
-                       join(',', array_map(array('MailWizzApi\Json', 'nameValue'),
+                       join(',', array_map(array('Fahim\MailWiz\API\Json', 'nameValue'),
                                            array_keys($vars),
                                            array_values($vars)))
                        . '}';
