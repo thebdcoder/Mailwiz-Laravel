@@ -17,16 +17,7 @@ class Mailwiz {
 
 	protected $userKey;
 
-	public function __construct($apiUrl , $publicKey , $privateKey , $userKey)
-	{
-		$this->apiUrl;
-		$this->publicKey;
-		$this->privateKey;
-
-		$this->userKey;
-	}
-
-	public function subscribe()
+	public function subscribe($email = null , $FNAME = null , $LNAME = null)
 	{
 
 		// configuration object
@@ -49,9 +40,9 @@ class Mailwiz {
 		    $listUid    = $this->userKey;// you'll take this from your customers area, in list overview from the address bar.
 		    $endpoint   = new ListSubscribers();
 		    $response   = $endpoint->create($listUid, array(
-		        'EMAIL' => isset($_POST['EMAIL']) ? $_POST['EMAIL'] : null,
-		        'FNAME' => isset($_POST['FNAME']) ? $_POST['FNAME'] : null,
-		        'LNAME' => isset($_POST['LNAME']) ? $_POST['LNAME'] : null,
+		        'EMAIL' => $email,
+		        'FNAME' => $FNAME,
+		        'LNAME' => $LNAME,
 		    ));
 		    $response   = $response->body;
 		    
@@ -71,6 +62,26 @@ class Mailwiz {
 		}
 
 
+	}
+
+	public function setApiUrl($apiUrl)
+	{
+		return $this->apiUrl = $apiUrl;
+	}
+
+	public function setPublicKey($publicKey)
+	{
+		return $this->publicKey = $publicKey;
+	}
+
+	public function setPrivateKey($privateKey)
+	{
+		return $this->privateKey = $privateKey;
+	}
+
+	public function setUserKey($userKey)
+	{
+		return $this->userKey = $userKey;
 	}
 
 
